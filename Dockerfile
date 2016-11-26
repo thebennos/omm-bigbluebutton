@@ -11,9 +11,6 @@ RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ trusty multiverse" | tee -a /
 RUN apt-get -y update
 RUN apt-get -y dist-upgrade
 
-# Install FFMPEG
-RUN apt-get install build-essential git-core checkinstall yasm texi2html libvorbis-dev libx11-dev libvpx-dev libxfixes-dev zlib1g-dev pkg-config netcat libncurses5-dev
-
 #Install PPA for LibreOffice 4.4 and libsslAnchor link for: install ppa for libreoffice 44 and libssl
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:libreoffice/libreoffice-4-4
